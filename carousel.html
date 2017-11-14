@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Backbone Carousel</h1>
+
+    <div id="my-carousel">
+      <div class="carousel-button">
+        <button id="carousel-prev">&laquo;</button>
+      </div>
+      <script id="blockTemplate" type="text/template">
+          <div class="carousel-item">
+            <img src=<%= image %> />
+          </div>
+      </script>
+      <div class="carousel-button next">
+         <button id="carousel-next">&raquo;</button>
+     </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js"></script>
+    <script src="./carousel.js"></script>
+
+  </body>
+</html>
